@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>maximumNumber</key>
+		<string>10</string>
+		<key>minimumNumber</key>
+		<string>1</string>
+		<key>numberOfSegments</key>
+		<string>5</string>
+		<key>type</key>
+		<string>segmented</string>
+	</dict>
+	<dict>
+		<key>maximumNumber</key>
+		<string>15</string>
+		<key>minimumNumber</key>
+		<string>1</string>
+		<key>numberOfSegments</key>
+		<string>4</string>
+		<key>type</key>
+		<string>segmented</string>
+	</dict>
+	<dict>
+		<key>maximumNumber</key>
+		<string>20</string>
+		<key>minimumNumber</key>
+		<string>1</string>
+		<key>numberOfSegments</key>
+		<string>3</string>
+		<key>type</key>
+		<string>segmented</string>
+	</dict>
+	<dict>
+		<key>maximumNumber</key>
+		<string>25</string>
+		<key>minimumNumber</key>
+		<string>1</string>
+		<key>numberOfSegments</key>
+		<string>2</string>
+		<key>type</key>
+		<string>segmented</string>
+	</dict>
+	<dict>
+		<key>maximumNumber</key>
+		<string>30</string>
+		<key>minimumNumber</key>
+		<string>1</string>
+		<key>numberOfSegments</key>
+		<string>1</string>
+		<key>type</key>
+		<string>segmented</string>
+	</dict>
+	<dict>
+		<key>Operations</key>
+		<array>
+			<string>0</string>
+			<string>2</string>
+		</array>
+		<key>HumanReadableDescription</key>
+		<string>The Staircase</string>
+		<key>HumanReadableName</key>
+		<string>Level 2</string>
+	</dict>
+</array>
+</plist>

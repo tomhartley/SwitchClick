@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>inactiveSwitches</key>
+		<string>2</string>
+		<key>numberOfSwitches</key>
+		<string>6</string>
+		<key>numberShown</key>
+		<string>YES</string>
+		<key>type</key>
+		<string>binary</string>
+	</dict>
+	<dict>
+		<key>maximumNumber</key>
+		<string>30</string>
+		<key>minimumNumber</key>
+		<string>0</string>
+		<key>numberOfSegments</key>
+		<string>5</string>
+		<key>type</key>
+		<string>segmented</string>
+	</dict>
+	<dict>
+		<key>inactiveSwitches</key>
+		<string>2</string>
+		<key>numberOfSwitches</key>
+		<string>6</string>
+		<key>numberShown</key>
+		<string>YES</string>
+		<key>type</key>
+		<string>binary</string>
+	</dict>
+	<dict>
+		<key>HumanReadableDescription</key>
+		<string>Mash-it-up</string>
+		<key>HumanReadableHelp</key>
+		<string></string>
+		<key>HumanReadableName</key>
+		<string>Level 4</string>
+		<key>LevelFileFormatVersionNumber</key>
+		<string>1.0</string>
+		<key>Operations</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+			<string>2</string>
+		</array>
+		<key>ShowsOperations</key>
+		<string>YES</string>
+	</dict>
+</array>
+</plist>

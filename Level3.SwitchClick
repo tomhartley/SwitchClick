@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>maximumNumber</key>
+		<string>20</string>
+		<key>minimumNumber</key>
+		<string>0</string>
+		<key>numberOfSegments</key>
+		<string>3</string>
+		<key>type</key>
+		<string>segmented</string>
+	</dict>
+	<dict>
+		<key>maximumNumber</key>
+		<string>20</string>
+		<key>minimumNumber</key>
+		<string>0</string>
+		<key>numberOfSegments</key>
+		<string>3</string>
+		<key>type</key>
+		<string>segmented</string>
+	</dict>
+	<dict>
+		<key>maximumNumber</key>
+		<string>20</string>
+		<key>minimumNumber</key>
+		<string>0</string>
+		<key>numberOfSegments</key>
+		<string>3</string>
+		<key>type</key>
+		<string>segmented</string>
+	</dict>
+	<dict>
+		<key>HumanReadableDescription</key>
+		<string>Hello, subtraction</string>
+		<key>HumanReadableName</key>
+		<string>Tutorial 3</string>
+		<key>HumanReadableHelp</key>
+		<string>This level uses subtraction only</string>		
+		<key>LevelFileFormatVersionNumber</key>
+		<string>1.0</string>
+		<key>ShowsOperations</key>
+		<string>YES</string>
+		<key>Operations</key>
+		<array>
+			<string>1</string>
+		</array>
+	</dict>
+</array>
+</plist>

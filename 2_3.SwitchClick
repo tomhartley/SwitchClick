@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>inactiveSwitches</key>
+		<string>3</string>
+		<key>numberOfSwitches</key>
+		<string>6</string>
+		<key>numberShown</key>
+		<string>YES</string>
+		<key>type</key>
+		<string>binary</string>
+	</dict>
+	<dict>
+		<key>inactiveSwitches</key>
+		<string>3</string>
+		<key>numberOfSwitches</key>
+		<string>6</string>
+		<key>numberShown</key>
+		<string>YES</string>
+		<key>type</key>
+		<string>binary</string>
+	</dict>
+	<dict>
+		<key>Operations</key>
+		<array>
+			<string>0</string>
+			<string>1</string>
+		</array>
+		<key>HumanReadableDescription</key>
+		<string>Binary Madness</string>
+		<key>HumanReadableName</key>
+		<string>Level 3</string>
+	</dict>
+</array>
+</plist>

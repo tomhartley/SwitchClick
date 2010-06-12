@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* Target_iPadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Target_iPadAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* Target_iPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* Target_iPadViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* Target_iPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* Target_iPadViewController.m */; };
+		D82C796311B184C500C8E177 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = D82C796111B184C500C8E177 /* Default-Landscape.png */; };
+		D82C796411B184C500C8E177 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = D82C796211B184C500C8E177 /* Default-Portrait.png */; };
+		D82C798911B1878800C8E177 /* THPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82C798711B1878800C8E177 /* THPlayViewController.m */; };
+		D82C798A11B1878800C8E177 /* THPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82C798811B1878800C8E177 /* THPlayViewController.xib */; };
+		D82C799511B18C3300C8E177 /* THLevelPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D82C799311B18C3300C8E177 /* THLevelPicker.m */; };
+		D82C799611B18C3300C8E177 /* THLevelPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82C799411B18C3300C8E177 /* THLevelPicker.xib */; };
+		D82C7A3911B2817400C8E177 /* THMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D82C7A3711B2817400C8E177 /* THMainMenu.m */; };
+		D82C7A3A11B2817400C8E177 /* THMainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82C7A3811B2817400C8E177 /* THMainMenu.xib */; };
+		D82C7A5911B2B91500C8E177 /* MainMenuTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D82C7A5811B2B91500C8E177 /* MainMenuTableDataSource.m */; };
+		D8774E6E11B7F47F00EAB85D /* THLevelEditorV.m in Sources */ = {isa = PBXBuildFile; fileRef = D8774E6C11B7F47F00EAB85D /* THLevelEditorV.m */; };
+		D8774E6F11B7F47F00EAB85D /* THLevelEditorV.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8774E6D11B7F47F00EAB85D /* THLevelEditorV.xib */; };
+		D8774E8311B7FC0B00EAB85D /* THCustomLevelManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8774E8111B7FC0B00EAB85D /* THCustomLevelManagerView.m */; };
+		D8774E8411B7FC0B00EAB85D /* THCustomLevelManagerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8774E8211B7FC0B00EAB85D /* THCustomLevelManagerView.xib */; };
+		D87D331911B9734900C5F13E /* THOptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87D331711B9734900C5F13E /* THOptionsController.m */; };
+		D87D331A11B9734900C5F13E /* THOptionsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87D331811B9734900C5F13E /* THOptionsController.xib */; };
+		D87D352411BBACC700C5F13E /* THLevelCreatingBrains.m in Sources */ = {isa = PBXBuildFile; fileRef = D87D352311BBACC700C5F13E /* THLevelCreatingBrains.m */; };
+		D8B5E98111B3B41E00346DB5 /* THLevelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E98011B3B41E00346DB5 /* THLevelManager.m */; };
+		D8B5E99A11B3B83D00346DB5 /* THExponential.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E99911B3B83D00346DB5 /* THExponential.m */; };
+		D8B5E9A111B3B84A00346DB5 /* THBinarySwitches.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E99C11B3B84A00346DB5 /* THBinarySwitches.m */; };
+		D8B5E9A211B3B84A00346DB5 /* THSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E99E11B3B84A00346DB5 /* THSegmentedControl.m */; };
+		D8B5E9A311B3B84A00346DB5 /* THLevelSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E9A011B3B84A00346DB5 /* THLevelSolver.m */; };
+		D8B5E9AE11B3B92D00346DB5 /* THRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E99711B3B48100346DB5 /* THRandom.m */; };
+		D8B5E9E311B3BDB000346DB5 /* LevelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E99511B3B45F00346DB5 /* LevelList.plist */; };
+		D8B5E9E411B3BDB600346DB5 /* Level1.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E98A11B3B44F00346DB5 /* Level1.SwitchClick */; };
+		D8B5E9E511B3BDB600346DB5 /* Level2.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E98B11B3B44F00346DB5 /* Level2.SwitchClick */; };
+		D8B5E9E611B3BDB600346DB5 /* Level3.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E98C11B3B44F00346DB5 /* Level3.SwitchClick */; };
+		D8B5E9E711B3BDB600346DB5 /* Level4.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E98D11B3B44F00346DB5 /* Level4.SwitchClick */; };
+		D8B5E9E811B3BDB600346DB5 /* Level5.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E98E11B3B44F00346DB5 /* Level5.SwitchClick */; };
+		D8B5E9E911B3BDB600346DB5 /* Level6.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E98F11B3B44F00346DB5 /* Level6.SwitchClick */; };
+		D8B5E9EA11B3BDB600346DB5 /* Level7.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E99011B3B44F00346DB5 /* Level7.SwitchClick */; };
+		D8B5E9EB11B3BDB600346DB5 /* 2_1.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E99111B3B44F00346DB5 /* 2_1.SwitchClick */; };
+		D8B5E9EC11B3BDB600346DB5 /* 2_2.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E99211B3B44F00346DB5 /* 2_2.SwitchClick */; };
+		D8B5E9ED11B3BDB600346DB5 /* 2_3.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E99311B3B44F00346DB5 /* 2_3.SwitchClick */; };
+		D8B5E9EE11B3BDB600346DB5 /* 2_4.SwitchClick in Resources */ = {isa = PBXBuildFile; fileRef = D8B5E99411B3B44F00346DB5 /* 2_4.SwitchClick */; };
+		D8DB704611B42449003B600B /* THLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DB704511B42449003B600B /* THLevelView.m */; };
+		D8DB728811B53ABC003B600B /* THCreditsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DB728611B53ABC003B600B /* THCreditsView.m */; };
+		D8DB728911B53ABC003B600B /* THCreditsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DB728711B53ABC003B600B /* THCreditsView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* Target_iPadAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_iPadAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* Target_iPadAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_iPadAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Target-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Target-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* Target_iPadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Target_iPadViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* Target_iPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_iPadViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* Target_iPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_iPadViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Target_iPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_iPad_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Target_iPad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Target_iPad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D82C796111B184C500C8E177 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "../../../../../../Desktop/SwitchClick graphics/Default-Landscape.png"; sourceTree = SOURCE_ROOT; };
+		D82C796211B184C500C8E177 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "../../../../../../Desktop/SwitchClick graphics/Default-Portrait.png"; sourceTree = SOURCE_ROOT; };
+		D82C798611B1878800C8E177 /* THPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPlayViewController.h; sourceTree = "<group>"; };
+		D82C798711B1878800C8E177 /* THPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPlayViewController.m; sourceTree = "<group>"; };
+		D82C798811B1878800C8E177 /* THPlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = THPlayViewController.xib; path = Classes/THPlayViewController.xib; sourceTree = "<group>"; };
+		D82C799211B18C3300C8E177 /* THLevelPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLevelPicker.h; sourceTree = "<group>"; };
+		D82C799311B18C3300C8E177 /* THLevelPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLevelPicker.m; sourceTree = "<group>"; };
+		D82C799411B18C3300C8E177 /* THLevelPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = THLevelPicker.xib; path = Classes/THLevelPicker.xib; sourceTree = "<group>"; };
+		D82C7A3611B2817400C8E177 /* THMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THMainMenu.h; path = ../THMainMenu.h; sourceTree = "<group>"; };
+		D82C7A3711B2817400C8E177 /* THMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THMainMenu.m; path = ../THMainMenu.m; sourceTree = "<group>"; };
+		D82C7A3811B2817400C8E177 /* THMainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THMainMenu.xib; sourceTree = "<group>"; };
+		D82C7A5711B2B91500C8E177 /* MainMenuTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuTableDataSource.h; sourceTree = "<group>"; };
+		D82C7A5811B2B91500C8E177 /* MainMenuTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuTableDataSource.m; sourceTree = "<group>"; };
+		D8774E6B11B7F47F00EAB85D /* THLevelEditorV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THLevelEditorV.h; path = ../THLevelEditorV.h; sourceTree = "<group>"; };
+		D8774E6C11B7F47F00EAB85D /* THLevelEditorV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THLevelEditorV.m; path = ../THLevelEditorV.m; sourceTree = "<group>"; };
+		D8774E6D11B7F47F00EAB85D /* THLevelEditorV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THLevelEditorV.xib; sourceTree = "<group>"; };
+		D8774E8011B7FC0B00EAB85D /* THCustomLevelManagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCustomLevelManagerView.h; sourceTree = "<group>"; };
+		D8774E8111B7FC0B00EAB85D /* THCustomLevelManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCustomLevelManagerView.m; sourceTree = "<group>"; };
+		D8774E8211B7FC0B00EAB85D /* THCustomLevelManagerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = THCustomLevelManagerView.xib; path = Classes/THCustomLevelManagerView.xib; sourceTree = "<group>"; };
+		D87D331611B9734900C5F13E /* THOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THOptionsController.h; sourceTree = "<group>"; };
+		D87D331711B9734900C5F13E /* THOptionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THOptionsController.m; sourceTree = "<group>"; };
+		D87D331811B9734900C5F13E /* THOptionsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = THOptionsController.xib; path = Classes/THOptionsController.xib; sourceTree = "<group>"; };
+		D87D352211BBACC700C5F13E /* THLevelCreatingBrains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLevelCreatingBrains.h; sourceTree = "<group>"; };
+		D87D352311BBACC700C5F13E /* THLevelCreatingBrains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLevelCreatingBrains.m; sourceTree = "<group>"; };
+		D8B5E97F11B3B41E00346DB5 /* THLevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLevelManager.h; sourceTree = "<group>"; };
+		D8B5E98011B3B41E00346DB5 /* THLevelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLevelManager.m; sourceTree = "<group>"; };
+		D8B5E98A11B3B44F00346DB5 /* Level1.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level1.SwitchClick; sourceTree = "<group>"; };
+		D8B5E98B11B3B44F00346DB5 /* Level2.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level2.SwitchClick; sourceTree = "<group>"; };
+		D8B5E98C11B3B44F00346DB5 /* Level3.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level3.SwitchClick; sourceTree = "<group>"; };
+		D8B5E98D11B3B44F00346DB5 /* Level4.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level4.SwitchClick; sourceTree = "<group>"; };
+		D8B5E98E11B3B44F00346DB5 /* Level5.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level5.SwitchClick; sourceTree = "<group>"; };
+		D8B5E98F11B3B44F00346DB5 /* Level6.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level6.SwitchClick; sourceTree = "<group>"; };
+		D8B5E99011B3B44F00346DB5 /* Level7.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level7.SwitchClick; sourceTree = "<group>"; };
+		D8B5E99111B3B44F00346DB5 /* 2_1.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2_1.SwitchClick; sourceTree = "<group>"; };
+		D8B5E99211B3B44F00346DB5 /* 2_2.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2_2.SwitchClick; sourceTree = "<group>"; };
+		D8B5E99311B3B44F00346DB5 /* 2_3.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2_3.SwitchClick; sourceTree = "<group>"; };
+		D8B5E99411B3B44F00346DB5 /* 2_4.SwitchClick */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2_4.SwitchClick; sourceTree = "<group>"; };
+		D8B5E99511B3B45F00346DB5 /* LevelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LevelList.plist; sourceTree = "<group>"; };
+		D8B5E99611B3B48100346DB5 /* THRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THRandom.h; sourceTree = "<group>"; };
+		D8B5E99711B3B48100346DB5 /* THRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THRandom.m; sourceTree = "<group>"; };
+		D8B5E99811B3B83D00346DB5 /* THExponential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THExponential.h; sourceTree = "<group>"; };
+		D8B5E99911B3B83D00346DB5 /* THExponential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THExponential.m; sourceTree = "<group>"; };
+		D8B5E99B11B3B84A00346DB5 /* THBinarySwitches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBinarySwitches.h; sourceTree = "<group>"; };
+		D8B5E99C11B3B84A00346DB5 /* THBinarySwitches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBinarySwitches.m; sourceTree = "<group>"; };
+		D8B5E99D11B3B84A00346DB5 /* THSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSegmentedControl.h; sourceTree = "<group>"; };
+		D8B5E99E11B3B84A00346DB5 /* THSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSegmentedControl.m; sourceTree = "<group>"; };
+		D8B5E99F11B3B84A00346DB5 /* THLevelSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLevelSolver.h; sourceTree = "<group>"; };
+		D8B5E9A011B3B84A00346DB5 /* THLevelSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLevelSolver.m; sourceTree = "<group>"; };
+		D8DB704411B42449003B600B /* THLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLevelView.h; sourceTree = "<group>"; };
+		D8DB704511B42449003B600B /* THLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLevelView.m; sourceTree = "<group>"; };
+		D8DB728511B53ABC003B600B /* THCreditsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCreditsView.h; sourceTree = "<group>"; };
+		D8DB728611B53ABC003B600B /* THCreditsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCreditsView.m; sourceTree = "<group>"; };
+		D8DB728711B53ABC003B600B /* THCreditsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = THCreditsView.xib; path = Classes/THCreditsView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D814F72111B858D1009E5AFC /* Model */,
+				D814F72411B85952009E5AFC /* View */,
+				D814F71F11B8589B009E5AFC /* Controller */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Target-iPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Target_iPad_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8B5EA0511B3C03A00346DB5 /* Nibs */,
+				D8B5E99511B3B45F00346DB5 /* LevelList.plist */,
+				D8B5E98911B3B44F00346DB5 /* Levels */,
+				D82C791711B1762900C8E177 /* Graphics */,
+				8D1107310486CEB800E47090 /* Target_iPad-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D814F71F11B8589B009E5AFC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D87D331611B9734900C5F13E /* THOptionsController.h */,
+				D87D331711B9734900C5F13E /* THOptionsController.m */,
+				D8774E8011B7FC0B00EAB85D /* THCustomLevelManagerView.h */,
+				D8774E8111B7FC0B00EAB85D /* THCustomLevelManagerView.m */,
+				D8DB728511B53ABC003B600B /* THCreditsView.h */,
+				D8DB728611B53ABC003B600B /* THCreditsView.m */,
+				D82C7A3611B2817400C8E177 /* THMainMenu.h */,
+				D82C7A3711B2817400C8E177 /* THMainMenu.m */,
+				D82C799211B18C3300C8E177 /* THLevelPicker.h */,
+				D82C799311B18C3300C8E177 /* THLevelPicker.m */,
+				D82C798611B1878800C8E177 /* THPlayViewController.h */,
+				D82C798711B1878800C8E177 /* THPlayViewController.m */,
+				28D7ACF60DDB3853001CB0EB /* Target_iPadViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* Target_iPadViewController.m */,
+				D8774E6B11B7F47F00EAB85D /* THLevelEditorV.h */,
+				D8774E6C11B7F47F00EAB85D /* THLevelEditorV.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D814F72111B858D1009E5AFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8B5E99711B3B48100346DB5 /* THRandom.m */,
+				D8B5E99611B3B48100346DB5 /* THRandom.h */,
+				D8B5E99811B3B83D00346DB5 /* THExponential.h */,
+				D8B5E99911B3B83D00346DB5 /* THExponential.m */,
+				D8B5E99F11B3B84A00346DB5 /* THLevelSolver.h */,
+				D8B5E9A011B3B84A00346DB5 /* THLevelSolver.m */,
+				D8B5E97F11B3B41E00346DB5 /* THLevelManager.h */,
+				D8B5E98011B3B41E00346DB5 /* THLevelManager.m */,
+				D82C7A5711B2B91500C8E177 /* MainMenuTableDataSource.h */,
+				D82C7A5811B2B91500C8E177 /* MainMenuTableDataSource.m */,
+				1D3623240D0F684500981E51 /* Target_iPadAppDelegate.h */,
+				1D3623250D0F684500981E51 /* Target_iPadAppDelegate.m */,
+				D87D352211BBACC700C5F13E /* THLevelCreatingBrains.h */,
+				D87D352311BBACC700C5F13E /* THLevelCreatingBrains.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D814F72411B85952009E5AFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8B5E99B11B3B84A00346DB5 /* THBinarySwitches.h */,
+				D8B5E99C11B3B84A00346DB5 /* THBinarySwitches.m */,
+				D8B5E99D11B3B84A00346DB5 /* THSegmentedControl.h */,
+				D8B5E99E11B3B84A00346DB5 /* THSegmentedControl.m */,
+				D8DB704411B42449003B600B /* THLevelView.h */,
+				D8DB704511B42449003B600B /* THLevelView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D82C791711B1762900C8E177 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				D82C796111B184C500C8E177 /* Default-Landscape.png */,
+				D82C796211B184C500C8E177 /* Default-Portrait.png */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		D8B5E98911B3B44F00346DB5 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				D8B5E98A11B3B44F00346DB5 /* Level1.SwitchClick */,
+				D8B5E98B11B3B44F00346DB5 /* Level2.SwitchClick */,
+				D8B5E98C11B3B44F00346DB5 /* Level3.SwitchClick */,
+				D8B5E98D11B3B44F00346DB5 /* Level4.SwitchClick */,
+				D8B5E98E11B3B44F00346DB5 /* Level5.SwitchClick */,
+				D8B5E98F11B3B44F00346DB5 /* Level6.SwitchClick */,
+				D8B5E99011B3B44F00346DB5 /* Level7.SwitchClick */,
+				D8B5E99111B3B44F00346DB5 /* 2_1.SwitchClick */,
+				D8B5E99211B3B44F00346DB5 /* 2_2.SwitchClick */,
+				D8B5E99311B3B44F00346DB5 /* 2_3.SwitchClick */,
+				D8B5E99411B3B44F00346DB5 /* 2_4.SwitchClick */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		D8B5EA0511B3C03A00346DB5 /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				D87D331811B9734900C5F13E /* THOptionsController.xib */,
+				D8774E6D11B7F47F00EAB85D /* THLevelEditorV.xib */,
+				D8774E8211B7FC0B00EAB85D /* THCustomLevelManagerView.xib */,
+				D8DB728711B53ABC003B600B /* THCreditsView.xib */,
+				2899E5210DE3E06400AC0155 /* Target_iPadViewController.xib */,
+				D82C798811B1878800C8E177 /* THPlayViewController.xib */,
+				D82C799411B18C3300C8E177 /* THLevelPicker.xib */,
+				D82C7A3811B2817400C8E177 /* THMainMenu.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Target-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Target-iPad" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				D8DE57DC11C02106003CBCA0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Target-iPad";
+			productName = "Target-iPad";
+			productReference = 1D6058910D05DD3D006BFB54 /* Target-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Target-iPad" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Target-iPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8B5E9E411B3BDB600346DB5 /* Level1.SwitchClick in Resources */,
+				D8B5E9E511B3BDB600346DB5 /* Level2.SwitchClick in Resources */,
+				D8B5E9E611B3BDB600346DB5 /* Level3.SwitchClick in Resources */,
+				D8B5E9E711B3BDB600346DB5 /* Level4.SwitchClick in Resources */,
+				D8B5E9E811B3BDB600346DB5 /* Level5.SwitchClick in Resources */,
+				D8B5E9E911B3BDB600346DB5 /* Level6.SwitchClick in Resources */,
+				D8B5E9EA11B3BDB600346DB5 /* Level7.SwitchClick in Resources */,
+				D8B5E9EB11B3BDB600346DB5 /* 2_1.SwitchClick in Resources */,
+				D8B5E9EC11B3BDB600346DB5 /* 2_2.SwitchClick in Resources */,
+				D8B5E9ED11B3BDB600346DB5 /* 2_3.SwitchClick in Resources */,
+				D8B5E9EE11B3BDB600346DB5 /* 2_4.SwitchClick in Resources */,
+				D8B5E9E311B3BDB000346DB5 /* LevelList.plist in Resources */,
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* Target_iPadViewController.xib in Resources */,
+				D82C796311B184C500C8E177 /* Default-Landscape.png in Resources */,
+				D82C796411B184C500C8E177 /* Default-Portrait.png in Resources */,
+				D82C798A11B1878800C8E177 /* THPlayViewController.xib in Resources */,
+				D82C799611B18C3300C8E177 /* THLevelPicker.xib in Resources */,
+				D82C7A3A11B2817400C8E177 /* THMainMenu.xib in Resources */,
+				D8DB728911B53ABC003B600B /* THCreditsView.xib in Resources */,
+				D8774E6F11B7F47F00EAB85D /* THLevelEditorV.xib in Resources */,
+				D8774E8411B7FC0B00EAB85D /* THCustomLevelManagerView.xib in Resources */,
+				D87D331A11B9734900C5F13E /* THOptionsController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8DE57DC11C02106003CBCA0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "perl /Users/tomhartley/Desktop/cloc-1.51.pl /Users/tomhartley/Documents/Programming/Xcode/Cocoa/iPad/Target-iPad";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* Target_iPadAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* Target_iPadViewController.m in Sources */,
+				D82C798911B1878800C8E177 /* THPlayViewController.m in Sources */,
+				D82C799511B18C3300C8E177 /* THLevelPicker.m in Sources */,
+				D82C7A3911B2817400C8E177 /* THMainMenu.m in Sources */,
+				D82C7A5911B2B91500C8E177 /* MainMenuTableDataSource.m in Sources */,
+				D8B5E98111B3B41E00346DB5 /* THLevelManager.m in Sources */,
+				D8B5E99A11B3B83D00346DB5 /* THExponential.m in Sources */,
+				D8B5E9A111B3B84A00346DB5 /* THBinarySwitches.m in Sources */,
+				D8B5E9A211B3B84A00346DB5 /* THSegmentedControl.m in Sources */,
+				D8B5E9A311B3B84A00346DB5 /* THLevelSolver.m in Sources */,
+				D8B5E9AE11B3B92D00346DB5 /* THRandom.m in Sources */,
+				D8DB704611B42449003B600B /* THLevelView.m in Sources */,
+				D8DB728811B53ABC003B600B /* THCreditsView.m in Sources */,
+				D8774E6E11B7F47F00EAB85D /* THLevelEditorV.m in Sources */,
+				D8774E8311B7FC0B00EAB85D /* THCustomLevelManagerView.m in Sources */,
+				D87D331911B9734900C5F13E /* THOptionsController.m in Sources */,
+				D87D352411BBACC700C5F13E /* THLevelCreatingBrains.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Target_iPad_Prefix.pch;
+				INFOPLIST_FILE = "Target_iPad-Info.plist";
+				PRODUCT_NAME = "Target-iPad";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Target_iPad_Prefix.pch;
+				INFOPLIST_FILE = "Target_iPad-Info.plist";
+				PRODUCT_NAME = "Target-iPad";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = armv7;
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Target-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Target-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
