@@ -15,8 +15,6 @@
 		2899E5220DE3E06400AC0155 /* Target_iPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* Target_iPadViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* Target_iPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* Target_iPadViewController.m */; };
-		D82C796311B184C500C8E177 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = D82C796111B184C500C8E177 /* Default-Landscape.png */; };
-		D82C796411B184C500C8E177 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = D82C796211B184C500C8E177 /* Default-Portrait.png */; };
 		D82C798911B1878800C8E177 /* THPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82C798711B1878800C8E177 /* THPlayViewController.m */; };
 		D82C798A11B1878800C8E177 /* THPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D82C798811B1878800C8E177 /* THPlayViewController.xib */; };
 		D82C799511B18C3300C8E177 /* THLevelPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D82C799311B18C3300C8E177 /* THLevelPicker.m */; };
@@ -52,6 +50,8 @@
 		D8DB704611B42449003B600B /* THLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DB704511B42449003B600B /* THLevelView.m */; };
 		D8DB728811B53ABC003B600B /* THCreditsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DB728611B53ABC003B600B /* THCreditsView.m */; };
 		D8DB728911B53ABC003B600B /* THCreditsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DB728711B53ABC003B600B /* THCreditsView.xib */; };
+		D8FA973611C41E8E0042618D /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FA973411C41E8E0042618D /* Default-Landscape.png */; };
+		D8FA973711C41E8E0042618D /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FA973511C41E8E0042618D /* Default-Portrait.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +68,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Target_iPad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_iPad_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Target_iPad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Target_iPad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		D82C796111B184C500C8E177 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "../../../../../../Desktop/SwitchClick graphics/Default-Landscape.png"; sourceTree = SOURCE_ROOT; };
-		D82C796211B184C500C8E177 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "../../../../../../Desktop/SwitchClick graphics/Default-Portrait.png"; sourceTree = SOURCE_ROOT; };
 		D82C798611B1878800C8E177 /* THPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPlayViewController.h; sourceTree = "<group>"; };
 		D82C798711B1878800C8E177 /* THPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPlayViewController.m; sourceTree = "<group>"; };
 		D82C798811B1878800C8E177 /* THPlayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = THPlayViewController.xib; path = Classes/THPlayViewController.xib; sourceTree = "<group>"; };
@@ -121,6 +119,8 @@
 		D8DB728511B53ABC003B600B /* THCreditsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCreditsView.h; sourceTree = "<group>"; };
 		D8DB728611B53ABC003B600B /* THCreditsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCreditsView.m; sourceTree = "<group>"; };
 		D8DB728711B53ABC003B600B /* THCreditsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = THCreditsView.xib; path = Classes/THCreditsView.xib; sourceTree = "<group>"; };
+		D8FA973411C41E8E0042618D /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		D8FA973511C41E8E0042618D /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,8 +258,8 @@
 		D82C791711B1762900C8E177 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				D82C796111B184C500C8E177 /* Default-Landscape.png */,
-				D82C796211B184C500C8E177 /* Default-Portrait.png */,
+				D8FA973411C41E8E0042618D /* Default-Landscape.png */,
+				D8FA973511C41E8E0042618D /* Default-Portrait.png */,
 			);
 			name = Graphics;
 			sourceTree = "<group>";
@@ -355,8 +355,6 @@
 				D8B5E9E311B3BDB000346DB5 /* LevelList.plist in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* Target_iPadViewController.xib in Resources */,
-				D82C796311B184C500C8E177 /* Default-Landscape.png in Resources */,
-				D82C796411B184C500C8E177 /* Default-Portrait.png in Resources */,
 				D82C798A11B1878800C8E177 /* THPlayViewController.xib in Resources */,
 				D82C799611B18C3300C8E177 /* THLevelPicker.xib in Resources */,
 				D82C7A3A11B2817400C8E177 /* THMainMenu.xib in Resources */,
@@ -364,6 +362,8 @@
 				D8774E6F11B7F47F00EAB85D /* THLevelEditorV.xib in Resources */,
 				D8774E8411B7FC0B00EAB85D /* THCustomLevelManagerView.xib in Resources */,
 				D87D331A11B9734900C5F13E /* THOptionsController.xib in Resources */,
+				D8FA973611C41E8E0042618D /* Default-Landscape.png in Resources */,
+				D8FA973711C41E8E0042618D /* Default-Portrait.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +426,7 @@
 				GCC_PREFIX_HEADER = Target_iPad_Prefix.pch;
 				INFOPLIST_FILE = "Target_iPad-Info.plist";
 				PRODUCT_NAME = "Target-iPad";
+				SYMROOT = /Users/tomhartley/Documents/Programming/Builds;
 			};
 			name = Debug;
 		};
