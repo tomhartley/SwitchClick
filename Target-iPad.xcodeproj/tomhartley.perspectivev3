@@ -280,8 +280,10 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>53</integer>
-									<integer>52</integer>
+									<integer>47</integer>
+									<integer>46</integer>
+									<integer>42</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -330,17 +332,14 @@
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>D8FA976811C41FF30042618D</string>
+										<string>D8FA976D11C4218A0042618D</string>
 										<key>history</key>
 										<array>
-											<string>D87D345311BAAEDA00C5F13E</string>
-											<string>D87D353211BBAFCF00C5F13E</string>
 											<string>D87D353311BBAFCF00C5F13E</string>
 											<string>D87D353411BBAFCF00C5F13E</string>
 											<string>D87D353511BBAFCF00C5F13E</string>
 											<string>D87D353A11BBB03100C5F13E</string>
 											<string>D8DE57EE11C03422003CBCA0</string>
-											<string>D8DE57EF11C03422003CBCA0</string>
 											<string>D8DE57F011C03422003CBCA0</string>
 											<string>D8AB4DE511C19BCC00D34A65</string>
 											<string>D8AB4DE611C19BCC00D34A65</string>
@@ -352,7 +351,10 @@
 											<string>D8AB4DEC11C19BCC00D34A65</string>
 											<string>D8AB4DED11C19BCC00D34A65</string>
 											<string>D8FA973811C41E910042618D</string>
-											<string>D8FA973A11C41E910042618D</string>
+											<string>D8FA976911C4218A0042618D</string>
+											<string>D8FA976A11C4218A0042618D</string>
+											<string>D8FA976B11C4218A0042618D</string>
+											<string>D8FA976C11C4218A0042618D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -381,8 +383,6 @@
 							<key>Tabs</key>
 							<array>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
@@ -630,14 +630,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>D8FA973B11C41E910042618D</string>
+				<string>D8FA976E11C4218A0042618D</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>D8FA973C11C41E910042618D</string>
-				<string>D8FA973D11C41E910042618D</string>
-				<string>D8FA973E11C41E910042618D</string>
-				<string>D8FA973F11C41E910042618D</string>
-				<string>D8FA974011C41E910042618D</string>
+				<string>D8FA976F11C4218A0042618D</string>
+				<string>D8FA977011C4218A0042618D</string>
+				<string>D8FA977111C4218A0042618D</string>
+				<string>D8FA977211C4218A0042618D</string>
+				<string>D8FA977311C4218A0042618D</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
