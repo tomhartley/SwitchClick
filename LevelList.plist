@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>Level1</string>
+		<string>Level2</string>
+		<string>Level3</string>
+		<string>Level4</string>
+		<string>Level6</string>
+		<string>Level7</string>
+		<string>Level5</string>
+		<dict>
+			<key>name</key>
+			<string>Tutorials</string>
+			<key>description</key>
+			<string>Some simple levels, with lots of help, to get you started</string>
+		</dict>
+	</array>
+	<array>
+		<string>2_1</string>
+		<string>2_2</string>
+		<string>2_3</string>
+		<string>2_4</string>
+		<dict>
+			<key>name</key>
+			<string>Main Levels</string>
+			<key>description</key>
+			<string>The built in levels</string>
+		</dict>
+	</array>
+	<array>
+		<string>Level1</string>
+		<string>Level2</string>
+		<string>Level3</string>
+		<string>Level4</string>
+		<string>Level5</string>
+		<string>Level6</string>
+		<dict>
+			<key>name</key>
+			<string>Custom levels</string>
+			<key>description</key>
+			<string>Levels which you have designed in the level editor</string>
+		</dict>
+	</array>
+</array>
+</plist>
