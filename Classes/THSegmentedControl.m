@@ -22,8 +22,9 @@
 	[self reload];
 	self.selectedSegmentIndex=0;
 	[self addTarget:self 
-				action:@selector(buttonChanged) 
-	  forControlEvents:UIControlEventValueChanged];
+			 action:@selector(buttonChanged) 
+   forControlEvents:UIControlEventValueChanged];
+	self.segmentedControlStyle=3;
 	return self;
 }
 

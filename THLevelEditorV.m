@@ -1,4 +1,4 @@
-    //
+//
 //  THLevelEditorV.m
 //  Target-iPad
 //
@@ -12,7 +12,7 @@
 @implementation THLevelEditorV
 
 
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil newLevel:(BOOL)newLevel levelID:(NSString *)levelIDtoLoad{
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         // Custom initialization
@@ -21,32 +21,34 @@
 		} else {
 			
 		}
+		dataForLevel=[[NSMutableArray alloc] initWithCapacity:100];
     }
     return self;
 }
 
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
 
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-- (void)dealloc {
-    [super dealloc];
-}
-*/
+ // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+ - (void)viewDidLoad {
+	 [super viewDidLoad];
+	 leftTableView.separatorColor=[UIColor lightGrayColor];
+ }
+ /*
+ - (void)didReceiveMemoryWarning {
+ // Releases the view if it doesn't have a superview.
+ [super didReceiveMemoryWarning];
+ 
+ // Release any cached data, images, etc that aren't in use.
+ }
+ - (void)viewDidUnload {
+ [super viewDidUnload];
+ // Release any retained subviews of the main view.
+ // e.g. self.myOutlet = nil;
+ }
+ - (void)dealloc {
+ [super dealloc];
+ }
+ */
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Overriden to allow any orientation.
@@ -94,7 +96,7 @@
 		sender.title=@"Edit"; 
 	} else {
 		[leftTableView setEditing:YES animated:YES];
-		sender.title=@"Cancel";
+		sender.title=@"Done";
 	}
 	
 }
@@ -117,17 +119,34 @@
 	if ([[[dataForLevel objectAtIndex:indexPath.row] objectForKey:@"type"] isEqual:@"segmented"]) {
 		//The row is for a segmented control
 		cell.textLabel.text=@"Segmented Control";
+		//cell.textLabel.shadowColor=[UIColor whiteColor];
+		//cell.textLabel.shadowOffset=CGSizeMake(0, 1);
+		UISegmentedControl *seggy = [[[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"", @"", nil]] autorelease];
+		seggy.segmentedControlStyle=3;
+		seggy.selectedSegmentIndex=0;
+		seggy.frame=CGRectMake(0, 0, 95, seggy.frame.size.height);
+		cell.accessoryView=seggy;
 	} else {
 		//The row is for some binary switches
 		cell.textLabel.text=@"Binary Switches";
+		cell.accessoryView=[[[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 0, 0)] autorelease];
+		//cell.textLabel.shadowColor=[UIColor whiteColor];
+		//cell.textLabel.shadowOffset=CGSizeMake(0, 1);
 	}
-	return cell;
+	return [cell autorelease];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+	NSLog(@"dataForlevelCount:%d rowToDelete:%d", [dataForLevel count], indexPath.row);
 	[dataForLevel removeObjectAtIndex:indexPath.row];
+	[leftTableView deleteRowsAtIndexPaths:[NSArray  arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationRight];
 }
 
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+	id temp = [dataForLevel objectAtIndex:fromIndexPath.row];
+	[dataForLevel removeObjectAtIndex:fromIndexPath.row];
+	[dataForLevel insertObject:temp atIndex:toIndexPath.row];
+}
 #pragma mark Table View Delegat Methods
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -140,16 +159,19 @@
 	switch (buttonIndex) {
 		case 0:
 			//Segmented Control
+			
 			[dataForLevel addObject:[THLevelCreatingBrains dictionaryForSegmented]];
 			break;
 		case 1:
 			//Binary Switches
 			[dataForLevel addObject:[THLevelCreatingBrains dictionaryForBinary]];
 			break;
-
+			
 		default:
 			break;
 	}
-
+	
+	[leftTableView insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:([dataForLevel count]-1) inSection:0]] withRowAnimation:UITableViewRowAnimationRight];
+	
 }
 @end

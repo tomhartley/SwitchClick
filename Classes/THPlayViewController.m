@@ -1,4 +1,4 @@
-    //
+//
 //  THPlayViewController.m
 //  Target-iPad
 //
@@ -12,12 +12,15 @@
 @implementation THPlayViewController
 
 
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil withLevelID:(NSString *)levelIDToLoad withSection:(NSInteger) sectionNumber {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         levelID=levelIDToLoad;
 		[levelID retain];
 		sectionNumberOfCurrentLevel=sectionNumber;
+		//helpLabel.frame=[[THLevelManager helpForID:levelID] sizeWithFont:[UIFont fontWithName:@"Helvetica" size:32] constrainedToSize:helpLabel.frame.size lineBreakMode:UILineBreakModeTailTruncation];
+		CGSize theSize=[[THLevelManager helpForID:levelID] sizeWithFont:[UIFont fontWithName:@"Helvetica" size:32] constrainedToSize:helpLabel.frame.size lineBreakMode:UILineBreakModeTailTruncation];
+		helpLabel.frame=CGRectMake(helpLabel.frame.origin.x, helpLabel.frame.origin.y, theSize.width, theSize.height);
     }
     return self;
 }
@@ -28,9 +31,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	/*[self performSelector:@selector(loadTheWhole) withObject:nil afterDelay:0.0001];
-	navBar.topItem.title=[THLevelManager nameForID:levelID];
-	navBar.topItem.prompt=[THLevelManager descriptionForID:levelID];
-	helpLabel.text=[THLevelManager helpForID:levelID];*/
+	 navBar.topItem.title=[THLevelManager nameForID:levelID];
+	 navBar.topItem.prompt=[THLevelManager descriptionForID:levelID];
+	 helpLabel.text=[THLevelManager helpForID:levelID];*/
 	[self loadTheWhole];
 }
 
