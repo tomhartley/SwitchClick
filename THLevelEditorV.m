@@ -161,17 +161,18 @@
 			//Segmented Control
 			
 			[dataForLevel addObject:[THLevelCreatingBrains dictionaryForSegmented]];
+			[leftTableView insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:([dataForLevel count]-1) inSection:0]] withRowAnimation:UITableViewRowAnimationRight];
 			break;
 		case 1:
 			//Binary Switches
 			[dataForLevel addObject:[THLevelCreatingBrains dictionaryForBinary]];
+			[leftTableView insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:([dataForLevel count]-1) inSection:0]] withRowAnimation:UITableViewRowAnimationRight];
 			break;
 			
 		default:
 			break;
 	}
 	
-	[leftTableView insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:([dataForLevel count]-1) inSection:0]] withRowAnimation:UITableViewRowAnimationRight];
 	
 }
 @end

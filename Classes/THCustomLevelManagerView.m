@@ -110,7 +110,7 @@
 -(IBAction)newLevel {
 	THLevelEditorV *levelEditingView =[[THLevelEditorV alloc] initWithNibName:@"THLevelEditorV" bundle:nil newLevel:YES levelID:nil];
 	levelEditingView.modalPresentationStyle=UIModalPresentationPageSheet;
-	levelEditingView.modalTransitionStyle=UIModalTransitionStyleCoverVertical;
+	levelEditingView.modalTransitionStyle=2;
 	[self presentModalViewController:levelEditingView animated:YES];
 }
 

@@ -426,7 +426,7 @@
 				GCC_PREFIX_HEADER = Target_iPad_Prefix.pch;
 				INFOPLIST_FILE = "Target_iPad-Info.plist";
 				PRODUCT_NAME = "Target-iPad";
-				SYMROOT = /Users/tomhartley/Documents/Programming/Builds;
+				SYMROOT = build/;
 			};
 			name = Debug;
 		};

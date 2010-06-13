@@ -16,6 +16,9 @@
 	THOptionsController *optionsController;
 	UIPopoverController *popoverController;
 	UIActionSheet *sheet;
+	
+	IBOutlet UIView *segmentedView;
+	IBOutlet UIView *binaryView;	
 }
 
 -(IBAction)save;
