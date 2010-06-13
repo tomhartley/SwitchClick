@@ -52,6 +52,8 @@
 		D8DB728911B53ABC003B600B /* THCreditsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DB728711B53ABC003B600B /* THCreditsView.xib */; };
 		D8FA973611C41E8E0042618D /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FA973411C41E8E0042618D /* Default-Landscape.png */; };
 		D8FA973711C41E8E0042618D /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FA973511C41E8E0042618D /* Default-Portrait.png */; };
+		D8FA98F011C571CF0042618D /* THSegmentedEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FA98EF11C571CF0042618D /* THSegmentedEditorView.m */; };
+		D8FA98F311C571E20042618D /* THBinaryEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FA98F211C571E20042618D /* THBinaryEditorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +123,10 @@
 		D8DB728711B53ABC003B600B /* THCreditsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = THCreditsView.xib; path = Classes/THCreditsView.xib; sourceTree = "<group>"; };
 		D8FA973411C41E8E0042618D /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
 		D8FA973511C41E8E0042618D /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		D8FA98EE11C571CF0042618D /* THSegmentedEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = THSegmentedEditorView.h; path = ../THSegmentedEditorView.h; sourceTree = "<group>"; };
+		D8FA98EF11C571CF0042618D /* THSegmentedEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = THSegmentedEditorView.m; path = ../THSegmentedEditorView.m; sourceTree = "<group>"; };
+		D8FA98F111C571E20042618D /* THBinaryEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBinaryEditorView.h; sourceTree = "<group>"; };
+		D8FA98F211C571E20042618D /* THBinaryEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBinaryEditorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +223,10 @@
 				28D7ACF70DDB3853001CB0EB /* Target_iPadViewController.m */,
 				D8774E6B11B7F47F00EAB85D /* THLevelEditorV.h */,
 				D8774E6C11B7F47F00EAB85D /* THLevelEditorV.m */,
+				D8FA98EE11C571CF0042618D /* THSegmentedEditorView.h */,
+				D8FA98EF11C571CF0042618D /* THSegmentedEditorView.m */,
+				D8FA98F111C571E20042618D /* THBinaryEditorView.h */,
+				D8FA98F211C571E20042618D /* THBinaryEditorView.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -409,6 +419,8 @@
 				D8774E8311B7FC0B00EAB85D /* THCustomLevelManagerView.m in Sources */,
 				D87D331911B9734900C5F13E /* THOptionsController.m in Sources */,
 				D87D352411BBACC700C5F13E /* THLevelCreatingBrains.m in Sources */,
+				D8FA98F011C571CF0042618D /* THSegmentedEditorView.m in Sources */,
+				D8FA98F311C571E20042618D /* THBinaryEditorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
