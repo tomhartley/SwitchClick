@@ -13,7 +13,7 @@
 @synthesize delegate;
 -(id)initWithCapacity:(NSInteger)capacity withMinimum:(NSInteger)minimum withMaximum:(NSInteger)maximum {
 	NSMutableArray *arrayOfEmpties=[NSMutableArray array];
-	for (capacity; capacity>0; capacity--) {
+	for (; capacity>0; capacity--) {
 		[arrayOfEmpties addObject:@""];
 	}
 	[self initWithItems:arrayOfEmpties];

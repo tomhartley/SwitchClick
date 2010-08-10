@@ -20,7 +20,5 @@
 -(NSString *)currentStringValue;
 -(void)buttonChanged;
 @property (retain, nonatomic) id delegate;
-@property (nonatomic)  NSInteger maximumRandom;
-@property (nonatomic)  NSInteger minimumRandom;
 
 @end
