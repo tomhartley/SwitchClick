@@ -3,7 +3,7 @@
 //  SwitchClick
 //
 //  Created by Tom Hartley on 16/04/10.
-//  Copyright 2010 Apple Inc. All rights reserved.
+//  Copyright 2010 Tom Hartley. All rights reserved.
 //
 
 #import "THBinarySwitches.h"

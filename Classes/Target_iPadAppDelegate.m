@@ -3,7 +3,7 @@
 //  Target-iPad
 //
 //  Created by Tom Hartley on 29/05/10.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
+//  Copyright Tom Hartley 2010. All rights reserved.
 //
 
 #import "Target_iPadAppDelegate.h"
