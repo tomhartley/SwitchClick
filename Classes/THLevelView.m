@@ -28,17 +28,19 @@
 			NSDictionary * aDictionary = [arrayOfDictionaries objectAtIndex:i];
 			if ([[aDictionary valueForKey:@"type"] isEqual:@"binary"]) {
 				//the value being processed is a set of binary switches
-				[arrayOfLevelObjects addObject:[[[THBinarySwitches alloc] initWithFrame:CGRectMake(0, 0, selfWidth, 10) 
-																		  withSwitches:[[aDictionary valueForKey:@"numberOfSwitches"] intValue] 
-																	   withNumberShown:[[aDictionary valueForKey:@"numberShown"] boolValue] 
-																  withInactiveSwitches:[[aDictionary valueForKey:@"inactiveSwitches"]intValue]] autorelease]];
+				[arrayOfLevelObjects addObject:[[[THBinarySwitches alloc] 
+					initWithFrame:CGRectMake(0, 0, selfWidth, 10) 
+					withSwitches:[[aDictionary valueForKey:@"numberOfSwitches"] intValue] 
+					withNumberShown:[[aDictionary valueForKey:@"numberShown"] boolValue] 
+					withInactiveSwitches:[[aDictionary valueForKey:@"inactiveSwitches"]intValue]] autorelease]];
 				
 			} else if ([[aDictionary valueForKey:@"type"] isEqual:@"segmented"]) {
 				
 				//the value being processed is a Segmented Control
-				[arrayOfLevelObjects addObject:[[[THSegmentedControl alloc] initWithCapacity:[[aDictionary valueForKey:@"numberOfSegments"] intValue]
-																		         withMinimum:[[aDictionary valueForKey:@"minimumNumber"] intValue]
-																				 withMaximum:[[aDictionary valueForKey:@"maximumNumber"] intValue]]autorelease]];
+				[arrayOfLevelObjects addObject:[[[THSegmentedControl alloc] 
+					initWithCapacity:[[aDictionary valueForKey:@"numberOfSegments"] intValue]
+					withMinimum:[[aDictionary valueForKey:@"minimumNumber"] intValue]
+					withMaximum:[[aDictionary valueForKey:@"maximumNumber"] intValue]]autorelease]];
 			}
 			
 		}

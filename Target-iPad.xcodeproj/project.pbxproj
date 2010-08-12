@@ -30,7 +30,6 @@
 		D87D331A11B9734900C5F13E /* THOptionsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87D331811B9734900C5F13E /* THOptionsController.xib */; };
 		D87D352411BBACC700C5F13E /* THLevelCreatingBrains.m in Sources */ = {isa = PBXBuildFile; fileRef = D87D352311BBACC700C5F13E /* THLevelCreatingBrains.m */; };
 		D8B5E98111B3B41E00346DB5 /* THLevelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E98011B3B41E00346DB5 /* THLevelManager.m */; };
-		D8B5E99A11B3B83D00346DB5 /* THExponential.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E99911B3B83D00346DB5 /* THExponential.m */; };
 		D8B5E9A111B3B84A00346DB5 /* THBinarySwitches.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E99C11B3B84A00346DB5 /* THBinarySwitches.m */; };
 		D8B5E9A211B3B84A00346DB5 /* THSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E99E11B3B84A00346DB5 /* THSegmentedControl.m */; };
 		D8B5E9A311B3B84A00346DB5 /* THLevelSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E9A011B3B84A00346DB5 /* THLevelSolver.m */; };
@@ -106,8 +105,6 @@
 		D8B5E99511B3B45F00346DB5 /* LevelList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LevelList.plist; sourceTree = "<group>"; };
 		D8B5E99611B3B48100346DB5 /* THRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THRandom.h; sourceTree = "<group>"; };
 		D8B5E99711B3B48100346DB5 /* THRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THRandom.m; sourceTree = "<group>"; };
-		D8B5E99811B3B83D00346DB5 /* THExponential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THExponential.h; sourceTree = "<group>"; };
-		D8B5E99911B3B83D00346DB5 /* THExponential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THExponential.m; sourceTree = "<group>"; };
 		D8B5E99B11B3B84A00346DB5 /* THBinarySwitches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBinarySwitches.h; sourceTree = "<group>"; };
 		D8B5E99C11B3B84A00346DB5 /* THBinarySwitches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBinarySwitches.m; sourceTree = "<group>"; };
 		D8B5E99D11B3B84A00346DB5 /* THSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSegmentedControl.h; sourceTree = "<group>"; };
@@ -226,8 +223,6 @@
 			children = (
 				D8B5E99711B3B48100346DB5 /* THRandom.m */,
 				D8B5E99611B3B48100346DB5 /* THRandom.h */,
-				D8B5E99811B3B83D00346DB5 /* THExponential.h */,
-				D8B5E99911B3B83D00346DB5 /* THExponential.m */,
 				D8B5E99F11B3B84A00346DB5 /* THLevelSolver.h */,
 				D8B5E9A011B3B84A00346DB5 /* THLevelSolver.m */,
 				D8B5E97F11B3B41E00346DB5 /* THLevelManager.h */,
@@ -403,7 +398,6 @@
 				D82C7A3911B2817400C8E177 /* THMainMenu.m in Sources */,
 				D82C7A5911B2B91500C8E177 /* MainMenuTableDataSource.m in Sources */,
 				D8B5E98111B3B41E00346DB5 /* THLevelManager.m in Sources */,
-				D8B5E99A11B3B83D00346DB5 /* THExponential.m in Sources */,
 				D8B5E9A111B3B84A00346DB5 /* THBinarySwitches.m in Sources */,
 				D8B5E9A211B3B84A00346DB5 /* THSegmentedControl.m in Sources */,
 				D8B5E9A311B3B84A00346DB5 /* THLevelSolver.m in Sources */,

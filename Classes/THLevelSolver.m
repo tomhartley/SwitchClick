@@ -7,7 +7,7 @@
 //
 
 #import "THLevelSolver.h"
-#import "THExponential.h"
+#import "math.h"
 //0 is +, 1 is -, 2 is *, 3 is /
 
 @implementation THLevelSolver
@@ -52,7 +52,7 @@
 	NSInteger iterateUp=0;
 	for (i = count-1; i > -1; i=i-1) {
 		NSString * aString = [arrayOfBinaries objectAtIndex:i];
-		NSInteger poweredUp=[THExponential num:2 toThePowerOf:iterateUp];
+		NSInteger poweredUp=pow(2,iterateUp);
 		//NSLog(@"IterateUp %d", iterateUp);
 		if ([aString isEqual:@"1"]) {
 			total=total+poweredUp;
