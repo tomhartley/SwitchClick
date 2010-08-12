@@ -33,22 +33,6 @@
 	 [super viewDidLoad];
 	 leftTableView.separatorColor=[UIColor lightGrayColor];
  }
- /*
- - (void)didReceiveMemoryWarning {
- // Releases the view if it doesn't have a superview.
- [super didReceiveMemoryWarning];
- 
- // Release any cached data, images, etc that aren't in use.
- }
- - (void)viewDidUnload {
- [super viewDidUnload];
- // Release any retained subviews of the main view.
- // e.g. self.myOutlet = nil;
- }
- - (void)dealloc {
- [super dealloc];
- }
- */
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Overriden to allow any orientation.
@@ -122,7 +106,7 @@
 		//cell.textLabel.shadowColor=[UIColor whiteColor];
 		//cell.textLabel.shadowOffset=CGSizeMake(0, 1);
 		UISegmentedControl *seggy = [[[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"", @"", nil]] autorelease];
-		seggy.segmentedControlStyle=3;
+		//seggy.segmentedControlStyle=3;
 		seggy.selectedSegmentIndex=0;
 		seggy.frame=CGRectMake(0, 0, 95, seggy.frame.size.height);
 		cell.accessoryView=seggy;
