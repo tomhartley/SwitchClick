@@ -13,6 +13,7 @@
 	IBOutlet UITableView *theTableView;
 	IBOutlet UIBarButtonItem *leftButtonItem;
 	IBOutlet UIBarButtonItem *rightButtonItem;
+	NSArray *paths;
 }
 
 -(IBAction)editCancel;

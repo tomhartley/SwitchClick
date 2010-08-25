@@ -51,6 +51,7 @@
 		D8DB728911B53ABC003B600B /* THCreditsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DB728711B53ABC003B600B /* THCreditsView.xib */; };
 		D8FA973611C41E8E0042618D /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FA973411C41E8E0042618D /* Default-Landscape.png */; };
 		D8FA973711C41E8E0042618D /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FA973511C41E8E0042618D /* Default-Portrait.png */; };
+		E2D6B5F71221B63700DF86E5 /* THLevelData.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D6B5F61221B63700DF86E5 /* THLevelData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,8 @@
 		D8DB728711B53ABC003B600B /* THCreditsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = THCreditsView.xib; path = Classes/THCreditsView.xib; sourceTree = "<group>"; };
 		D8FA973411C41E8E0042618D /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
 		D8FA973511C41E8E0042618D /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		E2D6B5F51221B63700DF86E5 /* THLevelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLevelData.h; sourceTree = "<group>"; };
+		E2D6B5F61221B63700DF86E5 /* THLevelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLevelData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,12 +224,14 @@
 		D814F72111B858D1009E5AFC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D8B5E99711B3B48100346DB5 /* THRandom.m */,
 				D8B5E99611B3B48100346DB5 /* THRandom.h */,
+				D8B5E99711B3B48100346DB5 /* THRandom.m */,
 				D8B5E99F11B3B84A00346DB5 /* THLevelSolver.h */,
 				D8B5E9A011B3B84A00346DB5 /* THLevelSolver.m */,
 				D8B5E97F11B3B41E00346DB5 /* THLevelManager.h */,
 				D8B5E98011B3B41E00346DB5 /* THLevelManager.m */,
+				E2D6B5F51221B63700DF86E5 /* THLevelData.h */,
+				E2D6B5F61221B63700DF86E5 /* THLevelData.m */,
 				D82C7A5711B2B91500C8E177 /* MainMenuTableDataSource.h */,
 				D82C7A5811B2B91500C8E177 /* MainMenuTableDataSource.m */,
 				1D3623240D0F684500981E51 /* Target_iPadAppDelegate.h */,
@@ -408,6 +413,7 @@
 				D8774E8311B7FC0B00EAB85D /* THCustomLevelManagerView.m in Sources */,
 				D87D331911B9734900C5F13E /* THOptionsController.m in Sources */,
 				D87D352411BBACC700C5F13E /* THLevelCreatingBrains.m in Sources */,
+				E2D6B5F71221B63700DF86E5 /* THLevelData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

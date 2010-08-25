@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "THLevelView.h"
+#import "THLevelData.h"
 
 @interface THPlayViewController : UIViewController {
 	IBOutlet UIScrollView *levelScrollView;
@@ -17,14 +18,15 @@
 	IBOutlet UILabel *secondsLabel;
 	IBOutlet UILabel *helpLabel;
 	IBOutlet UINavigationBar *navBar;
-	NSString *levelID;
+	THLevelData *levelData;
 	THLevelView *theLevel;
 	NSInteger moves;
 	NSInteger theTarget;
-	NSInteger sectionNumberOfCurrentLevel;
+	NSArray *pathsForReturning; //For when we need to go back the the previous screen
+	NSString *nameOfLevelPack;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil withLevelID:(NSString *)levelIDToLoad withSection:(NSInteger) sectionNumber;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil withPath:(NSString *)levelPath withPaths:(NSArray *) paths withName:(NSString *)name;
 - (IBAction)refreshCurrentLevel;
 - (IBAction)back;
 -(void)moveMade;

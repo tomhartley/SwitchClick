@@ -9,14 +9,19 @@
 #import "THLevelPicker.h"
 #import "THLevelManager.h"
 #import "THPlayViewController.h"
+#import "THLevelData.h"
 
 @implementation THLevelPicker
 
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil levelPackNumber:(NSInteger)levelPackNumber {
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil levelPaths:(NSArray *)theLevelPaths withName:(NSString *)name{
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-		levelPack=levelPackNumber;
+		levelPaths=theLevelPaths;
+		[levelPaths retain];
+		levelPackName=name;
+		[levelPackName retain];
+		NSLog(@"%@",levelPaths);
     }
     return self;
 }
@@ -26,7 +31,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	bar.topItem.title=[THLevelManager nameForSection:levelPack];
+	bar.topItem.title=levelPackName;
 }
 
 
@@ -63,18 +68,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"singleLevelCell"];
-	cell.textLabel.text= [THLevelManager nameForID:[THLevelManager IDForSection:levelPack forRow:indexPath.row]]; 
-	cell.detailTextLabel.text= [THLevelManager descriptionForID:[THLevelManager IDForSection:levelPack forRow:indexPath.row]]; 
+	THLevelData *data=[[THLevelData alloc] initWithPath:[levelPaths objectAtIndex:indexPath.row]];
+	cell.textLabel.text= [data name]; 
+	cell.detailTextLabel.text= [data description];
+	[data release];
 	return [cell autorelease];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [THLevelManager numberOfRowsInSection:levelPack];
+	return [levelPaths count];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
-	THPlayViewController *playView = [[THPlayViewController alloc] initWithNibName:@"THPlayViewController" bundle:nil withLevelID:[THLevelManager IDForSection:levelPack forRow:indexPath.row]withSection:levelPack];
+	THPlayViewController *playView = [[THPlayViewController alloc] initWithNibName:@"THPlayViewController" bundle:nil withPath:[levelPaths objectAtIndex:indexPath.row] withPaths:levelPaths withName:levelPackName];
+	//Dismiss this, and present the next viewcontroller from the main one
 	[playView setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
 	[playView setModalPresentationStyle:UIModalPresentationPageSheet];
 	UIViewController *temp=[self parentViewController];

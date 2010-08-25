@@ -9,20 +9,21 @@
 #import "THCustomLevelManagerView.h"
 #import "THLevelManager.h"
 #import "THLevelEditorV.h"
-
-#define kCustomLevelPackNumber 2
+#import "THLevelData.h"
 
 @implementation THCustomLevelManagerView
 
-/*
+
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         // Custom initialization
+		paths=[THLevelManager pathsForSection:[THLevelManager numberOfLevelPacks]-1];
+		[paths retain];
     }
     return self;
 }
-*/
+
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -77,14 +78,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"singleLevelCell"];
-	cell.showsReorderControl=YES;
-	cell.textLabel.text= [THLevelManager nameForID:[THLevelManager IDForSection:kCustomLevelPackNumber forRow:indexPath.row]]; 
-	cell.detailTextLabel.text= [THLevelManager descriptionForID:[THLevelManager IDForSection:kCustomLevelPackNumber forRow:indexPath.row]]; 
+	THLevelData *data=[[THLevelData alloc] initWithPath:[paths objectAtIndex:indexPath.row]];
+	cell.textLabel.text= [data name]; 
+	cell.detailTextLabel.text= [data description];
+	[data release];
 	return [cell autorelease];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [THLevelManager numberOfRowsInSection:kCustomLevelPackNumber];
+	return [paths count];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -100,7 +102,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-	[THLevelManager moveIndex:fromIndexPath.row toIndex:toIndexPath.row inSection:kCustomLevelPackNumber];
+	//[THLevelManager moveIndex:fromIndexPath.row toIndex:toIndexPath.row inSection:kCustomLevelPackNumber];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {

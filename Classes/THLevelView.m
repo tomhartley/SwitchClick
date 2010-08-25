@@ -12,18 +12,17 @@
 #import <QuartzCore/QuartzCore.h>
 #import "THRandom.h"
 #import "THLevelSolver.h"
-#import "THLevelManager.h"
 
 @implementation THLevelView
 @synthesize delegate;
 
 //Initialiser
-- (id)initWithFrame:(CGRect)frame withID:(NSString *)levelID {
+- (id)initWithFrame:(CGRect)frame withLevel:(THLevelData *)levelData {
     if ((self = [super initWithFrame:frame])) {
 		NSInteger selfWidth = frame.size.width;
-		NSArray *arrayOfDictionaries = [[THLevelManager arrayOfDictionariesForID:levelID] retain];
+		NSArray *arrayOfDictionaries = [levelData data];
 		arrayOfLevelObjects=[[NSMutableArray alloc] init];
-		NSUInteger i, count = [arrayOfDictionaries count]-1;
+		NSUInteger i, count = [arrayOfDictionaries count];
 		for (i = 0; i < count; i++) {
 			NSDictionary * aDictionary = [arrayOfDictionaries objectAtIndex:i];
 			if ([[aDictionary valueForKey:@"type"] isEqual:@"binary"]) {
@@ -44,8 +43,7 @@
 			}
 			
 		}
-		[arrayOfDictionaries autorelease];
-		operations=[THLevelManager arrayOfOperationsForID:levelID];
+		operations=[levelData operations];
 		[operations retain];
 		[self loadYourself];
 	}

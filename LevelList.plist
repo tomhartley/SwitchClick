@@ -29,19 +29,5 @@
 			<string>The built in levels</string>
 		</dict>
 	</array>
-	<array>
-		<string>Level1</string>
-		<string>Level2</string>
-		<string>Level3</string>
-		<string>Level4</string>
-		<string>Level5</string>
-		<string>Level6</string>
-		<dict>
-			<key>name</key>
-			<string>Custom levels</string>
-			<key>description</key>
-			<string>Levels which you have designed in the level editor</string>
-		</dict>
-	</array>
 </array>
 </plist>

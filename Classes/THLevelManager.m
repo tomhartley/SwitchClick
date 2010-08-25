@@ -49,18 +49,20 @@
 +(NSInteger)numberOfLevelPacks {
 	NSString *thePlist = [[NSBundle mainBundle]  pathForResource:@"LevelList" ofType:@"plist"];
 	NSArray *arrayOfLevels = [NSArray arrayWithContentsOfFile:thePlist];
-	return [arrayOfLevels count];
+	return [arrayOfLevels count]+1;
 }
 
 +(NSString *)descriptionForSection:(NSInteger)sectionNumber {
 	NSString *thePlist = [[NSBundle mainBundle]  pathForResource:@"LevelList" ofType:@"plist"];
 	NSArray *arrayOfLevels = [NSArray arrayWithContentsOfFile:thePlist];
+	if (sectionNumber==[arrayOfLevels count]) return @"Levels that you have created or downloaded";
 	return [[[arrayOfLevels objectAtIndex:sectionNumber] lastObject] objectForKey:@"description"];
 }
 
 +(NSString *)nameForSection:(NSInteger)sectionNumber {
 	NSString *thePlist = [[NSBundle mainBundle]  pathForResource:@"LevelList" ofType:@"plist"];
 	NSArray *arrayOfLevels = [NSArray arrayWithContentsOfFile:thePlist];
+	if (sectionNumber==[arrayOfLevels count]) return @"Custom levels";
 	return [[[arrayOfLevels objectAtIndex:sectionNumber] lastObject] objectForKey:@"name"];
 }
 
@@ -79,4 +81,28 @@
 	[arrayToChange insertObject:x atIndex:index2];
 	[arrayOfLevels writeToFile:thePlist atomically:YES];
 }
+
++(NSArray *)pathsForSection:(NSInteger)section {
+	NSString *thePlist = [[NSBundle mainBundle]  pathForResource:@"LevelList" ofType:@"plist"];
+	NSMutableArray *arrayOfLevels = [NSMutableArray arrayWithContentsOfFile:thePlist];
+	NSInteger numberOfSections=[arrayOfLevels count]+1;
+	if (section==numberOfSections-1) {
+		//Paths to custom levels
+		NSArray*  tempPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES); 
+		NSString* documentsDirectory = [tempPaths objectAtIndex:0];
+		NSBundle *docsBundle = [[NSBundle alloc] initWithPath:documentsDirectory];
+		return [docsBundle pathsForResourcesOfType:@"SwitchClick" inDirectory:@""];
+	} else {
+		//Prebuilt levels
+		NSArray *sectionIDs = [[arrayOfLevels objectAtIndex:section] subarrayWithRange:NSMakeRange(0, [[arrayOfLevels objectAtIndex:section] count]-1)];
+		NSString *pathToResourcesFolder= [[NSBundle mainBundle] bundlePath];
+		NSUInteger count = [sectionIDs count];
+		NSMutableArray *arrayOfPaths= [NSMutableArray array];
+		for (int counter=0; counter<count; counter++) {
+			[arrayOfPaths addObject:[[pathToResourcesFolder stringByAppendingPathComponent:[sectionIDs objectAtIndex:counter]] stringByAppendingString:@".SwitchClick"]];
+		}
+		return arrayOfPaths;
+	}
+}
+
 @end

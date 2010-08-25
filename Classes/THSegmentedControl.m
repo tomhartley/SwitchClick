@@ -24,7 +24,7 @@
 	[self addTarget:self 
 			 action:@selector(buttonChanged) 
    forControlEvents:UIControlEventValueChanged];
-	self.segmentedControlStyle=3;
+	//self.segmentedControlStyle=3;
 	return self;
 }
 

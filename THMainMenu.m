@@ -11,6 +11,7 @@
 #import "THRandom.h"
 #import "THCreditsView.h"
 #import "THCustomLevelManagerView.h"
+#import "THLevelManager.h"
 
 @implementation THMainMenu
 
@@ -63,7 +64,7 @@
 	switch (indexPath.section) {
 		case 0:
 		{
-			THLevelPicker *picker =[[THLevelPicker alloc] initWithNibName:@"THLevelPicker" bundle:nil levelPackNumber:indexPath.row];
+			THLevelPicker *picker =[[THLevelPicker alloc] initWithNibName:@"THLevelPicker" bundle:nil levelPaths:[THLevelManager pathsForSection:indexPath.row] withName:[THLevelManager nameForSection:indexPath.row]];
 			[picker setModalPresentationStyle:UIModalPresentationFormSheet];
 			[picker setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
 			[self presentModalViewController:picker animated:YES];
@@ -107,8 +108,10 @@
 	[self presentModalViewController:viewController animated:YES];
 }
 
--(void)displaySectionNumber:(NSNumber *)sectionNumber {
-	[theTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:[sectionNumber intValue] inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
-	[self tableView:theTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:[sectionNumber intValue] inSection:0]];
+-(void)displayPaths:(NSArray *)paths withName:(NSString *)name{
+	THLevelPicker *picker =[[THLevelPicker alloc] initWithNibName:@"THLevelPicker" bundle:nil levelPaths:paths withName:name];
+	[picker setModalPresentationStyle:UIModalPresentationFormSheet];
+	[picker setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+	[self presentModalViewController:picker animated:YES];
 } 
 @end

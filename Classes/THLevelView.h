@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "THLevelData.h"
 
 @interface THLevelView : UIView {
 	NSMutableArray *arrayOfLevelObjects;
@@ -18,7 +18,7 @@
 	NSArray* operations;
 }
 
-- (id)initWithFrame:(CGRect)frame withID:(NSString *)levelID;
+- (id)initWithFrame:(CGRect)frame withLevel:(THLevelData *)levelData;
 - (void)loadYourself;
 - (void)moveMade;
 -(void)refreshTheLevel;

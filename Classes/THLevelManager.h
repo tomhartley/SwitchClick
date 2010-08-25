@@ -34,5 +34,5 @@
 +(NSString *)helpForID:(NSString *)levelID;
 //Swap 2 indexes in the same section
 +(void) moveIndex:(NSInteger)index1 toIndex:(NSInteger)index2 inSection:(NSInteger)sectionNumber;
-
++(NSArray *)pathsForSection:(NSInteger)section;
 @end

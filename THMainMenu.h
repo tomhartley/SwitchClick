@@ -14,5 +14,5 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 -(void)displayViewController:(UIViewController *)viewController;
--(void)displaySectionNumber:(NSNumber *)sectionNumber;
+-(void)displayPaths:(NSArray *)paths withName:(NSString *)name;
 @end

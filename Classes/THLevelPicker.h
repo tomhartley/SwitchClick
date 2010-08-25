@@ -10,11 +10,12 @@
 
 
 @interface THLevelPicker : UIViewController <UITableViewDelegate, UITableViewDataSource>{
-	NSInteger levelPack;
+	NSArray *levelPaths;
 	IBOutlet UINavigationBar *bar;
+	NSString *levelPackName;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil levelPackNumber:(NSInteger)levelPackNumber;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil levelPaths:(NSArray *)theLevelPaths withName:(NSString *)name;
 - (IBAction)returnToMainMenu;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
